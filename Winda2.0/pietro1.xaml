@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="pietro1" Height="450" Width="800">
     <Grid>
-        <Button Name="GoUp" Click="GoUp_Click" Content="Do góry" Height="118" Width="188"/>
+        <Button Name="GoUp" Click="GoUp_Click" Content="Do góry" Height="118" Width="188" Margin="154,158,458,158"/>
+        <Button Name="GoDown" Click="GoDown_Click" Content="W dół" Height="118" Width="188" Margin="488,158,124,158"/>
 
     </Grid>
 </Window>

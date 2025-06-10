@@ -31,17 +31,24 @@ namespace Winda2._0
         }
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Kliknięto GoUp");
-            if (mainWindow != null)
+            if (mainWindow != null && (mainWindow.CurrentDirection == 1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 1)))
             {
                 await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
             }
-            else
-            {
-                MessageBox.Show("Błąd: brak odniesienia do głównego okna.");
-            }
+            //else
+            //{
+            //    MessageBox.Show("Winda nie jedzie w górę!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //}
         }
 
+        private async void GoDown_Click(object sender, RoutedEventArgs e)
+        {
+            if (mainWindow != null && (mainWindow.CurrentDirection == -1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 1)))
+            {
+                await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
+                //this.Close(); // <-- ZAMKNIJ okno pietro1
+            }
+        }
     }
 }

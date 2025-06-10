@@ -89,6 +89,7 @@ namespace Winda2._0
             isMoving = false;
             Direction = 0;
         }
+        public int CurrentDirection => Direction;
         private async Task MoveWindaTo(int floor)
         {
             try { 
@@ -139,6 +140,7 @@ namespace Winda2._0
                 MessageBox.Show($"Wystąpił błąd: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        public int CurrentFloor => Floor;
         private async Task OpenDoors()
         {
             DoubleAnimation left = new() { To = -40, Duration = TimeSpan.FromSeconds(0.5) };
