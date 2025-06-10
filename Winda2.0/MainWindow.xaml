@@ -35,6 +35,17 @@
                    <Rectangle Name="Ldrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="0" Canvas.Top="0" />
                 <Rectangle Name="Pdrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="40" Canvas.Top="0" />
             </Canvas>
+            <TextBlock Text="10" Canvas.Left="170" Canvas.Top="20" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="9"  Canvas.Left="175" Canvas.Top="80" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="8"  Canvas.Left="175" Canvas.Top="140" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="7"  Canvas.Left="175" Canvas.Top="200" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="6"  Canvas.Left="175" Canvas.Top="260" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="5"  Canvas.Left="175" Canvas.Top="320" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="4"  Canvas.Left="175" Canvas.Top="380" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="3"  Canvas.Left="175" Canvas.Top="440" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="2"  Canvas.Left="175" Canvas.Top="500" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="1"  Canvas.Left="175" Canvas.Top="560" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="0"  Canvas.Left="175" Canvas.Top="620" FontSize="16" FontWeight="Bold"/>
         </Canvas>
 
         <Button Name="Flor0" Content="0" HorizontalAlignment="Left" Margin="400,644,0,0" Width="60" Click="Flor_Click" Height="40" VerticalAlignment="Top"/>
