@@ -17,14 +17,14 @@ namespace Winda2._0
     /// <summary>
     /// Logika interakcji dla klasy pietro1.xaml
     /// </summary>
-    public partial class pietro1 : Window
+    public partial class pietro2 : Window
     {
         //public pietro1()
         //{
         //    InitializeComponent(); // bez tego okno będzie puste (brak treści z XAML)
         //}
         private MainWindow mainWindow;
-        public pietro1(MainWindow mw)
+        public pietro2(MainWindow mw)
         {
             InitializeComponent();
             mainWindow = mw;
@@ -36,10 +36,10 @@ namespace Winda2._0
         }
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == 1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 1)))
+            if (mainWindow != null && (mainWindow.CurrentDirection == 1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 2)))
             {
-                await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
-                //this.Close(); // <-- ZAMKNIJ okno pietro1
+                await mainWindow.GoToFloor(2);
+
             }
             //else
             //{
@@ -51,8 +51,8 @@ namespace Winda2._0
         {
             if (mainWindow != null && (mainWindow.CurrentDirection == -1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 1)))
             {
-                await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
-                //this.Close(); // <-- ZAMKNIJ okno pietro1
+                await mainWindow.GoToFloor(2);
+
             }
         }
         public void UpdateFloorDisplay(int floor)

@@ -24,7 +24,8 @@ namespace Winda2._0
         private bool isMoving = false;
         private int Direction = 0; // 1 = góra, -1 = dół
         private bool delayScheduled = false;
-
+        public pietro1? pietro1Window;
+        public pietro2? pietro2Window;
         public MainWindow()
         {
             InitializeComponent();
@@ -90,6 +91,7 @@ namespace Winda2._0
             Direction = 0;
         }
         public int CurrentDirection => Direction;
+
         private async Task MoveWindaTo(int floor)
         {
             try { 
@@ -118,21 +120,71 @@ namespace Winda2._0
             await Task.Delay(500);
             await tcs.Task;
             Floor = floor;
-            await OpenDoors();
+            if (pietro1Window != null && pietro1Window.IsVisible)
+            {
+                pietro1Window.UpdateFloorDisplay(Floor);
+            }
+            if (pietro2Window != null && pietro2Window.IsVisible)
+            {
+                pietro2Window.UpdateFloorDisplay(Floor);
+            }
+                await OpenDoors();
 
                 // TU POJAWIA SIĘ OKIENKO PYTAJĄCE
                 if (floor == 1)
                 {
-                    var result = MessageBox.Show("Czy wysiadasz na 1 piętrze?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                    if (result == MessageBoxResult.Yes)
+                    if (pietro1Window == null || !pietro1Window.IsVisible)
                     {
-                        pietro1 pietro1 = new pietro1(this);
-                        pietro1.Show();
+                        // Okno nie istnieje → pytamy o wysiadanie
+                        var result = MessageBox.Show("Czy wysiadasz na 1 piętrze?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            pietro1Window = new pietro1(this);
+                            pietro1Window.UpdateFloorDisplay(Floor);
+                            pietro1Window.Show();
+                        }
+                    }
+                    else
+                    {
+                        // Okno już istnieje → pytamy o wejście do windy
+                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            pietro1Window.Close();
+                            pietro1Window = null;
+                        }
                     }
                 }
 
-                await Task.Delay(2000);
+                // TU POJAWIA SIĘ OKIENKO PYTAJĄCE
+                if (floor == 2)
+                {
+                    if (pietro2Window == null || !pietro2Window.IsVisible)
+                    {
+                        // Okno nie istnieje → pytamy o wysiadanie
+                        var result = MessageBox.Show("Czy wysiadasz na 2 piętrze?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            pietro2Window = new pietro2(this);
+                            pietro2Window.UpdateFloorDisplay(Floor);
+                            pietro2Window.Show();
+                        }
+                    }
+                    else
+                    {
+                        // Okno już istnieje → pytamy o wejście do windy
+                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            pietro2Window.Close();
+                            pietro2Window = null;
+                        }
+                    }
+                }
+
+            
+                
+            await Task.Delay(2000);
             await CloseDoors();
             }
             catch (Exception ex)
