@@ -24,6 +24,7 @@ namespace Winda2._0
         private bool isMoving = false;
         private int Direction = 0; // 1 = góra, -1 = dół
         private bool delayScheduled = false;
+        private Window? activePietroWindow = null;
         public pietro1? pietro1Window;
         public pietro2? pietro2Window;
         public MainWindow()
@@ -92,6 +93,8 @@ namespace Winda2._0
         }
         public int CurrentDirection => Direction;
 
+        private bool isUserInElevator = true;
+
         private async Task MoveWindaTo(int floor)
         {
             try { 
@@ -133,58 +136,65 @@ namespace Winda2._0
                 // TU POJAWIA SIĘ OKIENKO PYTAJĄCE
                 if (floor == 1)
                 {
-                    if (pietro1Window == null || !pietro1Window.IsVisible)
+                    if (pietro1Window != null && pietro1Window.IsVisible)
                     {
-                        // Okno nie istnieje → pytamy o wysiadanie
+                        // User is at floor 1 and window is open => maybe entering
+                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            isUserInElevator = true;
+                            pietro1Window.Close();
+                            pietro1Window = null;
+                            activePietroWindow = null;
+                        }
+                    }
+                    else if (isUserInElevator)
+                    {
                         var result = MessageBox.Show("Czy wysiadasz na 1 piętrze?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
                         if (result == MessageBoxResult.Yes)
                         {
+                            isUserInElevator = false;
                             pietro1Window = new pietro1(this);
+                            activePietroWindow = pietro1Window;
+                            pietro1Window.Closed += (s, e) => activePietroWindow = null;
                             pietro1Window.UpdateFloorDisplay(Floor);
                             pietro1Window.Show();
                         }
                     }
-                    else
-                    {
-                        // Okno już istnieje → pytamy o wejście do windy
-                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                        if (result == MessageBoxResult.Yes)
-                        {
-                            pietro1Window.Close();
-                            pietro1Window = null;
-                        }
-                    }
                 }
+
 
                 // TU POJAWIA SIĘ OKIENKO PYTAJĄCE
                 if (floor == 2)
                 {
-                    if (pietro2Window == null || !pietro2Window.IsVisible)
+                    if (pietro2Window != null && pietro2Window.IsVisible)
                     {
-                        // Okno nie istnieje → pytamy o wysiadanie
+                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                        if (result == MessageBoxResult.Yes)
+                        {
+                            isUserInElevator = true;
+                            pietro2Window.Close();
+                            pietro2Window = null;
+                            activePietroWindow = null;
+                        }
+                    }
+                    else if (isUserInElevator)
+                    {
                         var result = MessageBox.Show("Czy wysiadasz na 2 piętrze?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
                         if (result == MessageBoxResult.Yes)
                         {
+                            isUserInElevator = false;
                             pietro2Window = new pietro2(this);
+                            activePietroWindow = pietro2Window;
+                            pietro2Window.Closed += (s, e) => activePietroWindow = null;
                             pietro2Window.UpdateFloorDisplay(Floor);
                             pietro2Window.Show();
                         }
                     }
-                    else
-                    {
-                        // Okno już istnieje → pytamy o wejście do windy
-                        var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                        if (result == MessageBoxResult.Yes)
-                        {
-                            pietro2Window.Close();
-                            pietro2Window = null;
-                        }
-                    }
                 }
 
-            
-                
-            await Task.Delay(2000);
+
+                await Task.Delay(2000);
             await CloseDoors();
             }
             catch (Exception ex)

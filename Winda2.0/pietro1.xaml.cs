@@ -23,6 +23,7 @@ namespace Winda2._0
         //{
         //    InitializeComponent(); // bez tego okno będzie puste (brak treści z XAML)
         //}
+
         private MainWindow mainWindow;
         public pietro1(MainWindow mw)
         {
@@ -59,5 +60,6 @@ namespace Winda2._0
         {
             FloorDisplay.Text = $"Piętro: {floor}";
         }
+
     }
 }
