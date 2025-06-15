@@ -37,23 +37,45 @@ namespace Winda2._0
         }
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == 1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 1)))
+            if (mainWindow != null && (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 1 || mainWindow.IsPendingFloorsEmpty))
             {
                 await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
             }
-            //else
-            //{
-            //    MessageBox.Show("Winda nie jedzie w górę!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
-            //}
+            if (mainWindow != null && mainWindow.CurrentFloor == 1 && !mainWindow.isMoving)
+            {
+                if (!mainWindow.AreDoorsOpen)
+                {
+                    await mainWindow.OpenDoors();
+                }
+                var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    mainWindow.SetUserInElevator(true); // przy wsiadaniu
+                    this.Close();
+                }
+            }
         }
 
         private async void GoDown_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == -1 || mainWindow.CurrentDirection == 0 || (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 1)))
+            if (mainWindow != null && (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 1 || mainWindow.IsPendingFloorsEmpty))
             {
                 await mainWindow.GoToFloor(1); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
+            }
+            if (mainWindow != null && mainWindow.CurrentFloor == 1 && !mainWindow.isMoving)
+            {
+                if (!mainWindow.AreDoorsOpen)
+                {
+                    await mainWindow.OpenDoors();
+                }
+                var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    mainWindow.SetUserInElevator(true); // przy wsiadaniu
+                    this.Close();
+                }
             }
         }
         public void UpdateFloorDisplay(int floor)

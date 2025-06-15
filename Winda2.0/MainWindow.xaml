@@ -32,8 +32,16 @@
        
         <Canvas Name="Blok" Background="LightGray" Width="200" Margin="100,24,0,0" Height="660" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Canvas Name="Winda" Width="80" Height="60" Background="#FF42AFED">
-                   <Rectangle Name="Ldrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="0" Canvas.Top="0" />
-                <Rectangle Name="Pdrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="40" Canvas.Top="0" />
+                <Rectangle Name="Ldrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="0" Canvas.Top="0">
+                    <Rectangle.RenderTransform>
+                        <TranslateTransform X="0"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle Name="Pdrzwi" Width="40" Height="60" Fill="#FF3A53F7" Canvas.Left="40" Canvas.Top="0">
+                    <Rectangle.RenderTransform>
+                        <TranslateTransform X="0"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
             </Canvas>
             <TextBlock Text="10" Canvas.Left="170" Canvas.Top="20" FontSize="16" FontWeight="Bold"/>
             <TextBlock Text="9"  Canvas.Left="175" Canvas.Top="80" FontSize="16" FontWeight="Bold"/>
@@ -59,7 +67,12 @@
         <Button Name="Flor8" Content="8" HorizontalAlignment="Left" Margin="400,164,0,0" VerticalAlignment="Top" Height="40" Width="60" Click="Flor_Click"/>
         <Button Name="Flor9" Content="9" HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top" Height="40" Width="60" Click="Flor_Click"/>
         <Button Name="Flor10" Content="10" HorizontalAlignment="Left" Margin="400,44,0,0" VerticalAlignment="Top" Height="40" Width="60" Click="Flor_Click"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,432,76,0">
+            <Button Content="OpenDrzwi" Width="100" Margin="5" Click="OpenDrzwi_Click"/>
+            <Button Content="CloseDrzwi" Width="100" Margin="5" Click="CloseDrzwi_Click"/>
+        </StackPanel>
 
+                
 
     </Grid>
 </Window>

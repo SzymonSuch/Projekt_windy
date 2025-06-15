@@ -9,6 +9,11 @@ namespace Winda2._0
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            var mainWindow = new MainWindow();
+            var pietro0Window = new pietro0(mainWindow);
+            pietro0Window.Show();
+        }
     }
-
 }

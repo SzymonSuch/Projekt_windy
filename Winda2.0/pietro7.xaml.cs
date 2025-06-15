@@ -15,16 +15,12 @@ using System.Windows.Shapes;
 namespace Winda2._0
 {
     /// <summary>
-    /// Logika interakcji dla klasy pietro1.xaml
+    /// Logika interakcji dla klasy pietro7.xaml
     /// </summary>
-    public partial class pietro2 : Window
+    public partial class pietro7 : Window
     {
-        //public pietro1()
-        //{
-        //    InitializeComponent(); // bez tego okno będzie puste (brak treści z XAML)
-        //}
         private MainWindow mainWindow;
-        public pietro2(MainWindow mw)
+        public pietro7(MainWindow mw)
         {
             InitializeComponent();
             mainWindow = mw;
@@ -36,12 +32,12 @@ namespace Winda2._0
         }
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 2 || mainWindow.IsPendingFloorsEmpty))
+            if (mainWindow != null && (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 7 || mainWindow.IsPendingFloorsEmpty))
             {
-                await mainWindow.GoToFloor(2); // dodajemy 1 do kolejki
+                await mainWindow.GoToFloor(7); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
             }
-            if (mainWindow != null && mainWindow.CurrentFloor == 2 && !mainWindow.isMoving)
+            if (mainWindow != null && mainWindow.CurrentFloor == 7 && !mainWindow.isMoving)
             {
                 if (!mainWindow.AreDoorsOpen)
                 {
@@ -50,8 +46,8 @@ namespace Winda2._0
                 var result = MessageBox.Show("Czy chcesz wejść do windy?", "Winda", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.Yes)
                 {
-                    mainWindow.Show();
                     mainWindow.SetUserInElevator(true);
+                    mainWindow.Show();
                     this.Close();
                 }
             }
@@ -59,12 +55,12 @@ namespace Winda2._0
 
         private async void GoDown_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 6 || mainWindow.IsPendingFloorsEmpty))
+            if (mainWindow != null && (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 7 || mainWindow.IsPendingFloorsEmpty))
             {
-                await mainWindow.GoToFloor(6); // dodajemy 1 do kolejki
+                await mainWindow.GoToFloor(7); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
             }
-            if (mainWindow != null && mainWindow.CurrentFloor == 2 && !mainWindow.isMoving)
+            if (mainWindow != null && mainWindow.CurrentFloor == 7 && !mainWindow.isMoving)
             {
                 if (!mainWindow.AreDoorsOpen)
                 {
