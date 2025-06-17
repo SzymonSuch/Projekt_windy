@@ -63,7 +63,7 @@ namespace Winda2._0
         }
         private async void Flor_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button btn && int.TryParse(btn.Content.ToString(), out int targetFloor))
+            if (sender is Button btn && int.TryParse(btn.Tag?.ToString(), out int targetFloor))
             {
                 // Jeśli jesteś w windzie i winda jest na piętrze
                 if (isUserInElevator && targetFloor == Floor && !isMoving)
@@ -415,6 +415,11 @@ namespace Winda2._0
         public void SetUserInElevator(bool value)
         {
             isUserInElevator = value;
+        }
+
+        private void Dzwon_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Dryń dryń dryń....", "Dzwoń:", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
