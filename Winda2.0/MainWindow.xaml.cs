@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,7 @@ namespace Winda2._0
     {
         private const int wysokosc_windy = 60;
         private int Floor = 0;
+        public ObservableCollection<RideEntry> RideHistory { get; set; } = new(); // Właściwość do przechowywania historii jazd
 
         private HashSet<int> pendingFloors = new();
         public bool isMoving = false;
@@ -34,9 +36,12 @@ namespace Winda2._0
 
 
         
-        public MainWindow()
+        public MainWindow() // konstruktor
         {
             InitializeComponent();
+
+            this.DataContext = this; // Ustawienie DataContext dla powiązań danych
+
             Canvas.SetTop(Winda, (10 - Floor) * wysokosc_windy);
             Canvas.SetLeft(Winda, 40);
         }
@@ -184,6 +189,7 @@ namespace Winda2._0
 
         private async Task<bool> MoveWindaTo(int floor)
         {
+        
             try { 
             double targetY = (10 - floor) * wysokosc_windy;
 
@@ -229,8 +235,13 @@ namespace Winda2._0
 
             await Task.Delay(500);
             await tcs.Task;
+             
+            int previousFloor = Floor; ;
             Floor = floor;
-            if (pietro1Window != null && pietro1Window.IsVisible)
+
+                RideHistory.Add(new RideEntry(previousFloor, floor)); // Dodaj wpis do historii jazd
+
+                if (pietro1Window != null && pietro1Window.IsVisible)
             {
                 pietro1Window.UpdateFloorDisplay(Floor);
             }
