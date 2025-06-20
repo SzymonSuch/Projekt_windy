@@ -12,9 +12,14 @@ namespace Winda2._0
         public int From { get; set; }   
         public int To { get; set; }
 
-        public RideEntry(int from, int to)
+        public RideEntry(int from, int to) // Delegowanie do innego konstruktora
+            : this(from, to, DateTime.Now)
         {
-            Timestamp = DateTime.Now;
+        }
+
+        public RideEntry(int from, int to, DateTime timestamp) // Dodatkowy konstruktor do obsługi zapisu/ wczytywania z pliku
+        {
+            Timestamp = timestamp;
             From = from;
             To = to;
         }

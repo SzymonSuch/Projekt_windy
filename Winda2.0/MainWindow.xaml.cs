@@ -10,6 +10,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO; // Odczyt/ zapis
 
 namespace Winda2._0
 {
@@ -44,6 +45,9 @@ namespace Winda2._0
 
             Canvas.SetTop(Winda, (10 - Floor) * wysokosc_windy);
             Canvas.SetLeft(Winda, 40);
+
+            LoadRideHistoryFromFile(); // Wczytaj historię jazd z pliku przy starcie aplikacji
+
         }
 
         public async Task GoToFloor(int targetFloor)
@@ -187,6 +191,42 @@ namespace Winda2._0
 
         private bool isUserInElevator = true;
 
+        private void AppendRideToFile(RideEntry entry) // Metoda umożliwia dodanie przejzdu do pliku
+        {
+            string line = $"{entry.Timestamp:yyyy-MM-dd HH:mm:ss};{entry.From};{entry.To}";
+            File.AppendAllText("RideHistory.txt", line + Environment.NewLine);
+        }
+
+        private void LoadRideHistoryFromFile()  // Metoda umożliwia wczytanie z pliku
+        {
+            if (!File.Exists("RideHistory.txt"))
+                return;
+
+            try
+            {
+               
+                RideHistory.Clear();
+
+                foreach (var line in File.ReadAllLines("RideHistory.txt"))
+                {
+                    var parts = line.Split(';');
+                    if (parts.Length == 3 &&
+                        DateTime.TryParse(parts[0], out var timestamp) &&
+                        int.TryParse(parts[1], out var from) &&
+                        int.TryParse(parts[2], out var to))
+                    {
+                        RideHistory.Add(new RideEntry(from, to, timestamp));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd podczas wczytywania historii: {ex.Message}", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+
+        }
+
         private async Task<bool> MoveWindaTo(int floor)
         {
         
@@ -239,7 +279,9 @@ namespace Winda2._0
             int previousFloor = Floor; ;
             Floor = floor;
 
-                RideHistory.Add(new RideEntry(previousFloor, floor)); // Dodaj wpis do historii jazd
+                var entry = new RideEntry(previousFloor, floor);
+                RideHistory.Add(entry); // Dodaj wpis do historii jazd
+                AppendRideToFile(entry); // Dodaj do pliku
 
                 if (pietro1Window != null && pietro1Window.IsVisible)
             {
@@ -431,6 +473,17 @@ namespace Winda2._0
         private void Dzwon_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Dryń dryń dryń....", "Dzwoń:", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private void ClearRideHistory_Click(object sender, RoutedEventArgs e)
+        {
+            RideHistory.Clear(); // czyści ObservableCollection
+        }
+
+        private void LoadRideHistory_Click(object sender, RoutedEventArgs e)
+        {
+            LoadRideHistoryFromFile();
+            //MessageBox.Show("Historia przejazdów została wczytana.", "Sukces", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 

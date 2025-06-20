@@ -168,9 +168,17 @@
             </Button.Background>
         </Button>
 
-        <GroupBox Header="Historia przejazdów" Margin="0,531,123,0" HorizontalAlignment="Right" Width="350" VerticalAlignment="Top" Height="153">
+        <GroupBox Header="Historia przejazdów" Margin="0,550,125,0" HorizontalAlignment="Right" Width="330" VerticalAlignment="Top" Height="133">
             <ListBox ItemsSource="{Binding RideHistory}" />
         </GroupBox>
+
+        <Button Name = "ClearHistoryButton"  Content="Wyczyść rejestr" 
+                Click="ClearRideHistory_Click" HorizontalAlignment="Left" Margin="345,694,0,0" VerticalAlignment="Top" Height="33" Width="97"/>
+
+        <Button Name = "LoadHistoryButton"  Content="Wczytaj dotychczasową historię" 
+                Click="LoadRideHistory_Click" HorizontalAlignment="Left" Margin="486,694,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+
+
 
     </Grid>
 </Window>
