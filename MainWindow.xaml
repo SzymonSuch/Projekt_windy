@@ -1,0 +1,184 @@
+﻿<Window x:Class="Winda2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Winda2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="810" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="OkraglyPrzycisk" TargetType="Button">
+            <Setter Property="Width" Value="60"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Background" Value="DodgerBlue"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="{TemplateBinding Background}" />
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="NoHoverBackground">
+            <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource Self}}"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                SnapsToDevicePixels="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="DodgerBlue"/>
+                                <Setter TargetName="border" Property="BorderThickness" Value="3"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Image Margin="327,40,0,0" Source="imagine\przyciski do windy.png" Stretch="Fill" HorizontalAlignment="Left" Width="240" Height="450" VerticalAlignment="Top"/>
+
+        <Canvas Name="Blok" Background="#FF42AFED" Width="200" Margin="100,24,0,0" Height="660" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Canvas Name="Winda" Width="80" Height="60" Background="#FF42AFED">
+                <Image Source="/imagine/winda.png" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="80"/>
+                <Rectangle Name="Ldrzwi" Width="40" Height="60" Canvas.Left="0" Canvas.Top="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/imagine/drzwi.png"/>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <TranslateTransform X="0"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle Name="Pdrzwi" Width="40" Height="60" Canvas.Left="40" Canvas.Top="0">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="/imagine/Pdrzwi.png"/>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <TranslateTransform X="0"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <TextBlock Text="10" Canvas.Left="170" Canvas.Top="20" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="9"  Canvas.Left="175" Canvas.Top="80" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="8"  Canvas.Left="175" Canvas.Top="140" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="7"  Canvas.Left="175" Canvas.Top="200" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="6"  Canvas.Left="175" Canvas.Top="260" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="5"  Canvas.Left="175" Canvas.Top="320" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="4"  Canvas.Left="175" Canvas.Top="380" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="3"  Canvas.Left="175" Canvas.Top="440" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="2"  Canvas.Left="175" Canvas.Top="500" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="1"  Canvas.Left="175" Canvas.Top="560" FontSize="16" FontWeight="Bold"/>
+            <TextBlock Text="0"  Canvas.Left="175" Canvas.Top="620" FontSize="16" FontWeight="Bold"/>
+        </Canvas>
+
+        <Button Name="Flor0" Tag="0" HorizontalAlignment="Left" Margin="470,360,0,0" Width="44" Click="Flor_Click" Height="48" VerticalAlignment="Top" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p0.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor1" Tag="1" HorizontalAlignment="Left" Margin="382,298,0,0" VerticalAlignment="Top" Height="48" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor2" Tag="2" HorizontalAlignment="Left" Margin="470,298,0,0" VerticalAlignment="Top" Height="48" Width="44" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor3" Tag="3" HorizontalAlignment="Left" Margin="382,238,0,0" VerticalAlignment="Top" Height="48" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p3.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor4" Tag="4" HorizontalAlignment="Left" Margin="470,238,0,0" VerticalAlignment="Top" Height="48" Width="44" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p4.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor5" Tag="5" HorizontalAlignment="Left" Margin="382,177,0,0" VerticalAlignment="Top" Height="48" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p5.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor6" Tag="6" HorizontalAlignment="Left" Margin="470,176,0,0" VerticalAlignment="Top" Height="49" Width="43" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p6.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor7" Tag="7" HorizontalAlignment="Left" Margin="382,117,0,0" VerticalAlignment="Top" Height="48" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p7.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor8" Tag="8" HorizontalAlignment="Left" Margin="470,117,0,0" VerticalAlignment="Top" Height="48" Width="44" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p8.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor9" Tag="9" HorizontalAlignment="Left" Margin="382,55,0,0" VerticalAlignment="Top" Height="49" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p9.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor10" Tag="10" HorizontalAlignment="Left" Margin="470,55,0,0" VerticalAlignment="Top" Height="48" Width="44" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p10.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Flor_1" Tag="-1" HorizontalAlignment="Left" Margin="382,360,0,0" VerticalAlignment="Top" Height="48" Width="45" Click="Flor_Click" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/p_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Tag="OpenDrzwi" Width="44" Height="48" Margin="482,422,0,0" Click="OpenDrzwi_Click" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/otworz.png"/>
+            </Button.Background>
+        </Button>
+        <Button Tag="CloseDrzwi" Width="44" Height="48" Margin="368,422,0,0" Click="CloseDrzwi_Click" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/zamknij.png"/>
+            </Button.Background>
+        </Button>
+        <Button Tag="Dzwon" Width="44" Height="48" Margin="425,422,0,0" Click="Dzwon_Click" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/dzwon.png"/>
+            </Button.Background>
+        </Button>
+
+        <GroupBox Header="Historia przejazdów" Margin="0,550,125,0" HorizontalAlignment="Right" Width="330" VerticalAlignment="Top" Height="133">
+            <ListBox ItemsSource="{Binding RideHistory}" />
+        </GroupBox>
+
+        <Button Name = "ClearHistoryButton"  Content="Wyczyść rejestr" 
+                Click="ClearRideHistory_Click" HorizontalAlignment="Left" Margin="345,694,0,0" VerticalAlignment="Top" Height="33" Width="97"/>
+
+        <Button Name = "LoadHistoryButton"  Content="Wczytaj dotychczasową historię" 
+                Click="LoadRideHistory_Click" HorizontalAlignment="Left" Margin="486,694,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+
+
+
+    </Grid>
+</Window>
