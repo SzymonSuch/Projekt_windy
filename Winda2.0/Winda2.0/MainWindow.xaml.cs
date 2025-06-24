@@ -143,26 +143,7 @@ namespace Winda2._0
                 else
                 {
                     // Standardowa obsługa jazdy windy
-                    //await GoToFloor(targetFloor);
-
-                    //Logowanie do poziomu -1
-                    if (targetFloor == -1)
-                    {
-                        var loginWindow = new LoginWindow { Owner = this };
-                        bool? result = loginWindow.ShowDialog();
-                        if (result == true && loginWindow.IsAuthenticated)
-                        {
-                            await GoToFloor(-1);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Brak dostępu do poziomu -1", "Odmowa", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        }
-                    }
-                    else
-                    {
-                        await GoToFloor(targetFloor);
-                    }
+                    await GoToFloor(targetFloor);
                 }
             }
         }

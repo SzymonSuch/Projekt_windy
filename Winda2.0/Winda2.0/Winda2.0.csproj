@@ -57,11 +57,4 @@
     <Resource Include="imagine\zamknij.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Page Update="LoginWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
-  </ItemGroup>
-
 </Project>
