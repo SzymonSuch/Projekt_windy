@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Projekt_windy\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\source\\repos\\projekt_windy\\winda2.0\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\source\\repos\\projekt_windy\\winda2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\source\\repos\\projekt_windy\\winda2.0\\pietro1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Elevator\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,42 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "pietro1.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\pietro1.xaml",
-              "RelativeDocumentMoniker": "Winda2.0\\pietro1.xaml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\pietro1.xaml",
-              "RelativeToolTip": "Winda2.0\\pietro1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-17T22:02:43.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Winda2.0\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\MainWindow.xaml*",
-              "RelativeToolTip": "Winda2.0\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-10T19:50:01.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Winda2.0\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Projekt_windy\\Winda2.0\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Winda2.0\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAJkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T19:53:48.112Z",
-              "EditorCaption": ""
             }
           ]
         }
