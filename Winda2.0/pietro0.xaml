@@ -61,6 +61,11 @@
                 <ImageBrush ImageSource="/imagine/UP.png"/>
             </Button.Background>
         </Button>
+        <Button Name="GoDown" Click="GoDown_Click" Tag="W dół" Height="74" Margin="0,87.5,60,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
+            <Button.Background>
+                <ImageBrush ImageSource="/imagine/DOWN.png"/>
+            </Button.Background>
+        </Button>
         <TextBlock x:Name="FloorDisplay" Text="Piętro: ?" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
     </Grid>
 </Window>

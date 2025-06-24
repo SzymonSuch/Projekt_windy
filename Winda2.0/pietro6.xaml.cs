@@ -25,11 +25,6 @@ namespace Winda2._0
             InitializeComponent();
             mainWindow = mw;
         }
-        protected override void OnClosed(EventArgs e)
-        {
-            base.OnClosed(e);
-            mainWindow.pietro1Window = null;
-        }
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
             if (mainWindow != null && (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 6 || mainWindow.IsPendingFloorsEmpty))

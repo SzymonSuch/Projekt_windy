@@ -1,7 +1,72 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Elevator\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro9.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro9.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro8.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro8.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro7.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro7.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro10.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro10.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro0.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro0.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro0.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro0.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro-1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro-1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|c:\\users\\user\\desktop\\elevator\\winda2.0\\pietro-1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37A91C2C-6F50-4FBB-A330-E03AA51D27CF}|Winda2.0\\Winda2.0.csproj|solutionrelative:winda2.0\\pietro-1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +85,213 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pietro9.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro9.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro9.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro9.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro9.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:14:13.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pietro8.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro8.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro8.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro8.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro8.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:14:03.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pietro7.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro7.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro7.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro7.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro7.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:13:47.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pietro5.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro5.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro5.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro5.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro5.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:13:31.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "pietro4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro4.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro4.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro4.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro4.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:13:13.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pietro3.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro3.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro3.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro3.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro3.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:12:58.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "Winda2.0\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAAwC8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:48:51.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pietro1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro1.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro1.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro1.xaml.cs*",
+              "RelativeToolTip": "Winda2.0\\pietro1.xaml.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:01:47.536Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "pietro10.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro10.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro10.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro10.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro10.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:12:38.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "pietro2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro2.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro2.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro2.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro2.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:07:49.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pietro6.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro6.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro6.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro6.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro6.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:05:43.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "pietro1.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro1.xaml",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro1.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro1.xaml",
+              "RelativeToolTip": "Winda2.0\\pietro1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T17:01:06.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "pietro0.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro0.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro0.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro0.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro0.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwD0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:47:50.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "pietro-1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro-1.xaml.cs",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro-1.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro-1.xaml.cs",
+              "RelativeToolTip": "Winda2.0\\pietro-1.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T16:47:18.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "pietro-1.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro-1.xaml",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro-1.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro-1.xaml",
+              "RelativeToolTip": "Winda2.0\\pietro-1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T16:47:03.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "pietro0.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro0.xaml",
+              "RelativeDocumentMoniker": "Winda2.0\\pietro0.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Elevator\\Winda2.0\\pietro0.xaml",
+              "RelativeToolTip": "Winda2.0\\pietro0.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T16:46:48.422Z",
+              "EditorCaption": ""
             }
           ]
         }

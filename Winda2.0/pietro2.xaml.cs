@@ -29,11 +29,7 @@ namespace Winda2._0
             InitializeComponent();
             mainWindow = mw;
         }
-        protected override void OnClosed(EventArgs e)
-        {
-            base.OnClosed(e);
-            mainWindow.pietro1Window = null;
-        }
+        
         private async void GoUp_Click(object sender, RoutedEventArgs e)
         {
             if (mainWindow != null && (mainWindow.CurrentDirection == -1 && mainWindow.CurrentFloor < 2 || mainWindow.IsPendingFloorsEmpty))
@@ -59,9 +55,9 @@ namespace Winda2._0
 
         private async void GoDown_Click(object sender, RoutedEventArgs e)
         {
-            if (mainWindow != null && (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 6 || mainWindow.IsPendingFloorsEmpty))
+            if (mainWindow != null && (mainWindow.CurrentDirection == 1 && mainWindow.CurrentFloor > 2 || mainWindow.IsPendingFloorsEmpty))
             {
-                await mainWindow.GoToFloor(6); // dodajemy 1 do kolejki
+                await mainWindow.GoToFloor(2); // dodajemy 1 do kolejki
                 //this.Close(); // <-- ZAMKNIJ okno pietro1
             }
             if (mainWindow != null && mainWindow.CurrentFloor == 2 && !mainWindow.isMoving)

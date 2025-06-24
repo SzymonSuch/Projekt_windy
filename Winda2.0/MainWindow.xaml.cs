@@ -28,8 +28,7 @@ namespace Winda2._0
         private int Direction = 0; // 1 = góra, -1 = dół
         private bool delayScheduled = false;
         private Window? activePietroWindow = null;
-        public pietro1? pietro1Window;
-        public pietro2? pietro2Window;
+      
         private bool doorsOpen = false;
         private CancellationTokenSource? moveDelayCts;
         private bool waitingToMove = false;
@@ -302,14 +301,7 @@ namespace Winda2._0
                 RideHistory.Add(entry); // Dodaj wpis do historii jazd
                 AppendRideToFile(entry); // Dodaj do pliku
 
-                if (pietro1Window != null && pietro1Window.IsVisible)
-            {
-                pietro1Window.UpdateFloorDisplay(Floor);
-            }
-            if (pietro2Window != null && pietro2Window.IsVisible)
-            {
-                pietro2Window.UpdateFloorDisplay(Floor);
-            }
+
             await OpenDoors();
 
 
