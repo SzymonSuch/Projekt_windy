@@ -59,6 +59,10 @@
     <Grid>
         <Image Margin="327,40,0,0" Source="imagine\przyciski do windy.png" Stretch="Fill" HorizontalAlignment="Left" Width="240" Height="450" VerticalAlignment="Top"/>
 
+        <Canvas Name="magazyn" Background="#FF332E2C" Width="200" Margin="100,684,0,0" Height="60" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <TextBlock Text="-1"  Canvas.Left="169" Canvas.Top="20" FontSize="16" FontWeight="Bold" Foreground="#FFED2B2B"/>
+        </Canvas>
+
         <Canvas Name="Blok" Background="#FF42AFED" Width="200" Margin="100,24,0,0" Height="660" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Canvas Name="Winda" Width="80" Height="60" Background="#FF42AFED">
                 <Image Source="/imagine/winda.png" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="80"/>
@@ -91,6 +95,8 @@
             <TextBlock Text="1"  Canvas.Left="175" Canvas.Top="560" FontSize="16" FontWeight="Bold"/>
             <TextBlock Text="0"  Canvas.Left="175" Canvas.Top="620" FontSize="16" FontWeight="Bold"/>
         </Canvas>
+
+        
 
         <Button Name="Flor0" Tag="0" HorizontalAlignment="Left" Margin="470,360,0,0" Width="44" Click="Flor_Click" Height="48" VerticalAlignment="Top" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource NoHoverBackground}">
             <Button.Background>
@@ -168,7 +174,7 @@
             </Button.Background>
         </Button>
 
-        <GroupBox Header="Historia przejazdów" Margin="0,550,125,0" HorizontalAlignment="Right" Width="330" VerticalAlignment="Top" Height="133">
+        <GroupBox Header="Historia przejazdów" Margin="345,550,0,0" HorizontalAlignment="Left" Width="330" VerticalAlignment="Top" Height="133">
             <ListBox ItemsSource="{Binding RideHistory}" />
         </GroupBox>
 
